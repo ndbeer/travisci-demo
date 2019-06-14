@@ -9,5 +9,5 @@ install:
 script:
   - python -m unittest discover
   - coverage erase
-  - coverage run -m python &&coverage.html
+  - coverage run -m python && coverage.html
   - pylint --output-format=text main.py
