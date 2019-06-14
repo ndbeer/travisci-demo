@@ -22,7 +22,7 @@ class FlaskTestCase(unittest.TestCase):
     # TODO DEFINE TWO MORE TESTS ON THE END POINTS
     def test_uppercase(self):
         response = self.app.get('/touppercase?s=pizza')
-        resp - response.data.decode('utf-8')
+        resp = response.data.decode('utf-8')
         self.assertEqual(resp, 'PIZZA', 'toupper(pizzatje) != Pizza')
 
 if __name__ == '__main__':
